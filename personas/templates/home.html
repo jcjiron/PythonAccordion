@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Lista de personas</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>IEmail</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for p in personas %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.surname }}</td>
+            <td>{{ p.email }}</td>
+            <td><a href="details/{{ p.id }}">Details</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

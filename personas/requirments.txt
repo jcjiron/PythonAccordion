@@ -1,0 +1,6 @@
+ flask
+ flask_migrate
+ flask_sqlalchemy
+ flask_wtf
+ wtforms
+ psycopg2-binary
